@@ -17,12 +17,12 @@ const Recipes = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <SectionTitle
           heading="Explore Our Recipes"
           subHeading="From quick bites to gourmet feasts, explore recipes that are perfect for any occasion."
         />
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-1/2 border gap-y-4 gap-x-3  pl-4 lg:pl-10">
         {recipes.map((recipe) => (

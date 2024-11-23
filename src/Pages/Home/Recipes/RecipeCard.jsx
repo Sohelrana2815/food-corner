@@ -28,7 +28,7 @@ const RecipeCard = ({ recipe }) => {
             ))}
           </ul>
           {/* time and calories */}
-          <div className="flex">
+          <div className="md:flex ">
             <p className="flex items-center gap-1">
               <CiClock1 /> {preparing_time}
             </p>
@@ -36,7 +36,9 @@ const RecipeCard = ({ recipe }) => {
               <FaBurn /> {calories}
             </p>
           </div>
-          <button className="btn bg-purple-600 rounded-full text-white">Want to Cook</button>
+          <button className="btn bg-purple-600 rounded-full text-white  btn-sm lg:btn-md">
+            Want to Cook
+          </button>
         </div>
       </div>
     </>
