@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "https://example.com/images/recipe1.jpg",
+    "recipe_image": "https://i.ibb.co.com/KNX65bJ/recipe-img1.jpg",
     "recipe_id": "R001",
     "recipe_name": "Grilled Chicken Salad",
     "description": "A healthy and delicious salad with grilled chicken, fresh greens, and a tangy vinaigrette.",
@@ -30,7 +30,7 @@
     "calories": "450 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co.com/KNX65bJ/recipe-img1.jpg",
+    "recipe_image": "https://i.ibb.co.com/khsHv5W/recipe-img3.jpg",
     "recipe_id": "R003",
     "recipe_name": "Vegetable Stir-fry",
     "description": "A quick and easy stir-fry with a mix of colorful vegetables in a savory sauce.",
@@ -45,7 +45,7 @@
     "calories": "200 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe4.jpg",
+    "recipe_image": "https://i.ibb.co.com/RhsZ5nb/recipe-img4.jpg",
     "recipe_id": "R004",
     "recipe_name": "Classic Burger",
     "description": "A juicy beef patty served with lettuce, tomato, and cheese on a toasted bun.",
@@ -60,7 +60,7 @@
     "calories": "520 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe5.jpg",
+    "recipe_image": "https://i.ibb.co.com/4RZSkhB/recipe-img5.jpg",
     "recipe_id": "R005",
     "recipe_name": "Margarita Pizza",
     "description": "A classic pizza with fresh tomatoes, mozzarella, and basil leaves.",
@@ -75,7 +75,7 @@
     "calories": "360 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe6.jpg",
+    "recipe_image": "https://i.ibb.co.com/Bq5XTFy/recipe-img6.jpg",
     "recipe_id": "R006",
     "recipe_name": "Chicken Curry",
     "description": "A flavorful chicken curry made with a blend of spices and coconut milk.",
@@ -90,7 +90,7 @@
     "calories": "480 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe7.jpg",
+    "recipe_image": "https://i.ibb.co.com/HDFY25p/recipe-img7.jpg",
     "recipe_id": "R007",
     "recipe_name": "Pancakes",
     "description": "Fluffy pancakes served with syrup and fresh berries.",
@@ -105,7 +105,7 @@
     "calories": "350 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe8.jpg",
+    "recipe_image": "https://i.ibb.co.com/xGcxmgc/recipe-img8.jpg",
     "recipe_id": "R008",
     "recipe_name": "Tomato Soup",
     "description": "A comforting tomato soup with a hint of basil and garlic.",
@@ -120,7 +120,7 @@
     "calories": "180 calories"
   },
   {
-    "recipe_image": "https://example.com/images/recipe9.jpg",
+    "recipe_image": "https://i.ibb.co.com/MCYWcNw/recipe-img9.jpg",
     "recipe_id": "R009",
     "recipe_name": "Chocolate Cake",
     "description": "A rich and moist chocolate cake topped with chocolate ganache.",
