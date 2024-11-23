@@ -7,7 +7,7 @@ const RecipeCard = ({ recipe }) => {
           <img src={recipe_image} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2>{recipe_name}</h2>
+          <h2 className="md:text-lg font-semibold">{recipe_name}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
         </div>
       </div>
