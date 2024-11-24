@@ -1,8 +1,7 @@
 import { CiClock1 } from "react-icons/ci";
 import { FaBurn } from "react-icons/fa";
-import { FiRefreshCcw, FiRewind } from "react-icons/fi";
 
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ recipe, handleWantToCook }) => {
   const {
     recipe_image,
     recipe_name,
@@ -13,8 +12,8 @@ const RecipeCard = ({ recipe }) => {
   } = recipe;
   return (
     <>
-      <div className="card card-compact px-4  lg:w-50 bg-base-100 shadow-xl xl:w-80">
-        <figure className="h-56">
+      <div className="card card-compact px-4  lg:w-50 bg-base-100 shadow-xl xl:w-96">
+        <figure className="h-60">
           <img className="rounded-lg" src={recipe_image} alt="Shoes" />
         </figure>
         <div className="card-body ">
@@ -36,7 +35,10 @@ const RecipeCard = ({ recipe }) => {
               <FaBurn /> {calories}
             </p>
           </div>
-          <button className="btn bg-purple-600 rounded-full text-white  btn-sm lg:btn-md">
+          <button
+            onClick={() => handleWantToCook(recipe)}
+            className="btn bg-purple-600 rounded-full text-white  btn-xs md:btn-sm lg:btn-md text-xs lg:text-base"
+          >
             Want to Cook
           </button>
         </div>

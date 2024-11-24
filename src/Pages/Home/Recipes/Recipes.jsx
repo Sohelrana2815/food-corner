@@ -1,9 +1,8 @@
 import { useState } from "react";
-import SectionTitle from "../../../SectionTitle/SectionTitle";
 import { useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 
-const Recipes = () => {
+const Recipes = ({ handleWantToCook }) => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
@@ -26,7 +25,11 @@ const Recipes = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-1/2 border gap-y-4 gap-x-3  pl-4 lg:pl-10">
         {recipes.map((recipe) => (
-          <RecipeCard key={recipe.recipe_id} recipe={recipe} />
+          <RecipeCard
+            key={recipe.recipe_id}
+            recipe={recipe}
+            handleWantToCook={handleWantToCook}
+          />
         ))}
       </div>
     </>

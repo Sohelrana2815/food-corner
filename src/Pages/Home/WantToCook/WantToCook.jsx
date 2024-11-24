@@ -1,28 +1,35 @@
-const WantToCook = () => {
+const WantToCook = ({ cookItems }) => {
   return (
     <>
       <div
-        className="overflow-x-auto 
-      "
+        className="overflow-x-auto relative lg:left-44
+       md:left-36  xl:w-[450px] md:w-72"
       >
-        <table className="table">
+        <h2 className="text-center text-lg lg:text-2xl md:text-xl">
+          Want to Cook : {cookItems.length}
+        </h2>
+        <div className="divider"></div>
+        <table className="table table-xs lg:table-md">
           {/* head */}
           <thead>
             <tr>
-              <th></th>
               <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
+              <th>Time</th>
+              <th>Calorie</th>
             </tr>
           </thead>
           <tbody>
             {/* row 1 */}
-            <tr className="hover">
-              <th>2</th>
-              <td>Hart Hagerty</td>
-              <td>Desktop Support Technician</td>
-              <td>Purple</td>
-            </tr>
+            {cookItems.map((cookItem) => (
+              <tr key={cookItem.recipe_id} className="hover space-y-2">
+                <th>{cookItem.recipe_name}</th>
+                <td>{cookItem.preparing_time}</td>
+                <td>{cookItem.calories}</td>
+                <button className="btn  btn-sm bg-purple-600 text-white">
+                  Preparing
+                </button>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
