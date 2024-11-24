@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import RecipeCard from "./RecipeCard";
-
+import PropTypes from "prop-types";
 const Recipes = ({ handleWantToCook }) => {
   const [recipes, setRecipes] = useState([]);
 
@@ -16,14 +16,7 @@ const Recipes = ({ handleWantToCook }) => {
 
   return (
     <>
-      {/* <div>
-        <SectionTitle
-          heading="Explore Our Recipes"
-          subHeading="From quick bites to gourmet feasts, explore recipes that are perfect for any occasion."
-        />
-      </div> */}
-
-      <div className="grid grid-cols-1 md:grid-cols-2 w-1/2 border gap-y-4 gap-x-3  pl-4 lg:pl-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:w-1/2 gap-y-4 gap-x-3  md:pl-10  ">
         {recipes.map((recipe) => (
           <RecipeCard
             key={recipe.recipe_id}
@@ -34,6 +27,10 @@ const Recipes = ({ handleWantToCook }) => {
       </div>
     </>
   );
+};
+
+Recipes.propTypes = {
+  handleWantToCook: PropTypes.func.isRequired,
 };
 
 export default Recipes;

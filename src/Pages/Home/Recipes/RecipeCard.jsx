@@ -1,6 +1,6 @@
 import { CiClock1 } from "react-icons/ci";
 import { FaBurn } from "react-icons/fa";
-
+import PropTypes from "prop-types";
 const RecipeCard = ({ recipe, handleWantToCook }) => {
   const {
     recipe_image,
@@ -12,7 +12,7 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
   } = recipe;
   return (
     <>
-      <div className="card card-compact px-4  lg:w-50 bg-base-100 shadow-xl xl:w-96">
+      <div className="card card-compact px-4  lg:w-50 bg-base-100 shadow-xl xl:w-96 ">
         <figure className="h-60">
           <img className="rounded-lg" src={recipe_image} alt="Shoes" />
         </figure>
@@ -21,11 +21,11 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
           <p>{description}</p>
           <div className="divider"></div>
           <h4>Ingredients: {ingredients.length}</h4>
-          <ul>
+          <div>
             {ingredients.map((ingredient, index) => (
-              <li key={index}>{ingredient}</li>
+              <ul key={index}>{ingredient}</ul>
             ))}
-          </ul>
+          </div>
           {/* time and calories */}
           <div className="md:flex ">
             <p className="flex items-center gap-1">
@@ -37,7 +37,7 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
           </div>
           <button
             onClick={() => handleWantToCook(recipe)}
-            className="btn bg-purple-600 rounded-full text-white  btn-xs md:btn-sm lg:btn-md text-xs lg:text-base"
+            className="btn bg-purple-600 rounded-full text-white   md:btn-sm btn-md lg:btn-md text-xs lg:text-base"
           >
             Want to Cook
           </button>
@@ -45,6 +45,20 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
       </div>
     </>
   );
+};
+
+RecipeCard.propTypes = {
+  recipe: PropTypes.shape({
+    recipe_id: PropTypes.string.isRequired,
+    recipe_name: PropTypes.string.isRequired,
+    recipe_image: PropTypes.string.isRequired,
+    preparing_time: PropTypes.number.isRequired,
+    calories: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+    ingredients: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
+
+  handleWantToCook: PropTypes.func.isRequired,
 };
 
 export default RecipeCard;

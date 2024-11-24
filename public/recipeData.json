@@ -11,8 +11,8 @@
       "30 g feta cheese",
       "50 ml balsamic vinaigrette"
     ],
-    "preparing_time": "20 min",
-    "calories": "250 calories"
+    "preparing_time": 20,
+    "calories": 250
   },
   {
     "recipe_image": "https://i.ibb.co.com/rxNJYt0/recipe-img2.jpg",
@@ -26,8 +26,8 @@
       "50 g grated Parmesan cheese",
       "2 cloves garlic"
     ],
-    "preparing_time": "30 min",
-    "calories": "450 calories"
+    "preparing_time": 30,
+    "calories": 450
   },
   {
     "recipe_image": "https://i.ibb.co.com/khsHv5W/recipe-img3.jpg",
@@ -41,8 +41,8 @@
       "50 ml soy sauce",
       "1 tbsp sesame oil"
     ],
-    "preparing_time": "25 min",
-    "calories": "200 calories"
+    "preparing_time": 25,
+    "calories": 200
   },
   {
     "recipe_image": "https://i.ibb.co.com/RhsZ5nb/recipe-img4.jpg",
@@ -56,8 +56,8 @@
       "2 slices tomato",
       "30 g lettuce"
     ],
-    "preparing_time": "20 min",
-    "calories": "520 calories"
+    "preparing_time": 20,
+    "calories": 520
   },
   {
     "recipe_image": "https://i.ibb.co.com/4RZSkhB/recipe-img5.jpg",
@@ -71,8 +71,8 @@
       "20 g basil leaves",
       "10 ml olive oil"
     ],
-    "preparing_time": "40 min",
-    "calories": "360 calories"
+    "preparing_time": 40,
+    "calories": 360
   },
   {
     "recipe_image": "https://i.ibb.co.com/Bq5XTFy/recipe-img6.jpg",
@@ -86,8 +86,8 @@
       "2 medium onions",
       "3 cloves garlic"
     ],
-    "preparing_time": "45 min",
-    "calories": "480 calories"
+    "preparing_time": 45,
+    "calories": 480
   },
   {
     "recipe_image": "https://i.ibb.co.com/HDFY25p/recipe-img7.jpg",
@@ -101,8 +101,8 @@
       "30 g sugar",
       "50 g butter"
     ],
-    "preparing_time": "15 min",
-    "calories": "350 calories"
+    "preparing_time": 15,
+    "calories": 350
   },
   {
     "recipe_image": "https://i.ibb.co.com/xGcxmgc/recipe-img8.jpg",
@@ -116,8 +116,8 @@
       "30 ml cream",
       "10 g fresh basil"
     ],
-    "preparing_time": "30 min",
-    "calories": "180 calories"
+    "preparing_time": 30,
+    "calories": 180
   },
   {
     "recipe_image": "https://i.ibb.co.com/MCYWcNw/recipe-img9.jpg",
@@ -131,7 +131,7 @@
       "3 large eggs",
       "150 g butter"
     ],
-    "preparing_time": "60 min",
-    "calories": "600 calories"
+    "preparing_time": 60,
+    "calories": 600
   }
 ]
