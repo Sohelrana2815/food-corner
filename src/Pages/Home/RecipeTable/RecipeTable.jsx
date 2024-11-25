@@ -89,7 +89,6 @@ RecipeTable.propTypes = {
   currentCooking: PropTypes.arrayOf(
     PropTypes.shape({
       recipe_name: PropTypes.string.isRequired,
-      preparingTime: PropTypes.number.isRequired,
       calories: PropTypes.number.isRequired,
     }).isRequired
   ),

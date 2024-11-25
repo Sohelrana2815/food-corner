@@ -4,16 +4,22 @@ import Banner from "../Banner/Banner";
 import Recipes from "../Recipes/Recipes";
 import WantToCook from "../WantToCook/WantToCook";
 import RecipeTable from "../RecipeTable/RecipeTable";
-
+import toast, { Toaster } from "react-hot-toast";
 const Home = () => {
   const [cookItems, setCookItems] = useState([]);
   const [currentCooking, setCurrentCooking] = useState([]);
   const [preparingTime, setPreparingTime] = useState(0);
   const [calories, setCalories] = useState(0);
 
-  const handleWantToCook = (recipe) => {
-    const newCookItems = [...cookItems, recipe];
-    setCookItems(newCookItems);
+  const handleWantToCook = (recipe, id) => {
+    const isExist = cookItems.find((cookItem) => cookItem.recipe_id === id);
+    if (!isExist) {
+      const newCookItems = [...cookItems, recipe];
+      setCookItems(newCookItems);
+      toast.success("Added Successfully");
+    } else {
+      toast.error("You have already added this");
+    }
   };
 
   //
@@ -61,6 +67,7 @@ const Home = () => {
           calories={calories}
         />
       </div>
+      <Toaster />
     </div>
   );
 };

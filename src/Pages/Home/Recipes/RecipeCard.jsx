@@ -3,6 +3,7 @@ import { FaBurn } from "react-icons/fa";
 import PropTypes from "prop-types";
 const RecipeCard = ({ recipe, handleWantToCook }) => {
   const {
+    recipe_id,
     recipe_image,
     recipe_name,
     description,
@@ -36,7 +37,7 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
             </p>
           </div>
           <button
-            onClick={() => handleWantToCook(recipe)}
+            onClick={() => handleWantToCook(recipe, recipe_id)}
             className="btn bg-purple-600 rounded-full text-white   md:btn-sm btn-md lg:btn-md text-xs lg:text-base"
           >
             Want to Cook
