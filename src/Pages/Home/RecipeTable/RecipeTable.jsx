@@ -8,7 +8,7 @@ const RecipeTable = ({
 }) => {
   return (
     <>
-      <div className="max-w-sm mx-auto block md:hidden">
+      <div className="max-w-sm mx-auto block lg:hidden">
         <div className="overflow-x-auto  border border-purple-600 p-4 rounded-lg">
           <h2 className="text-center text-2xl  font-bold">
             Want to Cook : {cookItems.length}
@@ -78,7 +78,7 @@ const RecipeTable = ({
         </div>
       </div>
 
-      <div className="text-center border my-5 py-4 max-w-sm mx-auto rounded-lg block md:hidden">
+      <div className="text-center border my-5 py-4 max-w-sm mx-auto rounded-lg block lg:hidden">
         <p className="font-medium">Total times = {preparingTime} min</p>
         <p className="font-semibold">Total calories = {calories}</p>
       </div>
