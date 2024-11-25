@@ -18,12 +18,12 @@ const RecipeCard = ({ recipe, handleWantToCook }) => {
         </figure>
         <div className="card-body ">
           <h2 className="md:text-lg font-semibold">{recipe_name}</h2>
-          <p>{description}</p>
+          <p className="md:text-sm">{description}</p>
           <div className="divider"></div>
-          <h4>Ingredients: {ingredients.length}</h4>
+          <h4 className="lg:text-lg">Ingredients: {ingredients.length}</h4>
           <div>
             {ingredients.map((ingredient, index) => (
-              <ul key={index}>{ingredient}</ul>
+              <li key={index}>{ingredient}</li>
             ))}
           </div>
           {/* time and calories */}

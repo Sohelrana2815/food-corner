@@ -3,6 +3,7 @@ import SectionTitle from "../../../SectionTitle/SectionTitle";
 import Banner from "../Banner/Banner";
 import Recipes from "../Recipes/Recipes";
 import WantToCook from "../WantToCook/WantToCook";
+import RecipeTable from "../RecipeTable/RecipeTable";
 
 const Home = () => {
   const [cookItems, setCookItems] = useState([]);
@@ -43,6 +44,13 @@ const Home = () => {
           for any occasion."
         />
       </div>
+      <RecipeTable
+        cookItems={cookItems}
+        preparingRecipeItems={preparingRecipeItems}
+        currentCooking={currentCooking}
+        preparingTime={preparingTime}
+        calories={calories}
+      />
       <div className="flex py-10">
         <Recipes handleWantToCook={handleWantToCook} />
         <WantToCook
